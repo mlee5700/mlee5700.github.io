@@ -5,7 +5,19 @@
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Original highlight: #39c29d
+	New highlight: #3b4e95
 */
+
+:root {
+	--background: #f8f0e5;
+	--white: #ffffff;
+	--highlight: #3b4e95;
+	--title: #1d1d1d;
+	--font: #3d4253;
+	--footerFont: #646464;
+  }
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -83,7 +95,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #c2bbae; /* colour of slider [ML] */
+		background: var(--background);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,7 +110,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #424653;  /* Font colour [ML] */
+		color: var(--font);
 		font-family: "Lato", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -134,7 +146,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: rgb(63, 63, 63);
+		color: var(--title);
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1785,7 +1797,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #3b4e95;
+		color: var(--highlight);
 		font-size: 3.5em;
 	}
 
@@ -1848,7 +1860,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #3b4e95;
+			border-color: var(--highlight);
 		}
 
 	select {
@@ -1947,13 +1959,13 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #989898;
 			border-color: #989898;
-			color: #ffffff;
+			color: var(--white);
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #3b4e95;
+			border-color: var(--highlight);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2245,6 +2257,16 @@ input, select, textarea {
 				border-radius: 0;
 			}
 
+		.image.main2 {
+			display: block;
+			height: 10em;
+			border-radius: 0;
+		}
+
+			.image.main2 img {
+				border-radius: 0;
+			}
+
 /* List */
 
 	ol {
@@ -2440,9 +2462,9 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #3b4e95;
+				background: var(--highlight);
 				border-radius: 100%;
-				color: #ffffff;
+				color: var(--white);
 				display: block;
 				height: 2.5em;
 				left: 0;
@@ -2559,7 +2581,7 @@ input, select, textarea {
 		background-color: #989898;
 		border-radius: 5px;
 		border: 0;
-		color: #ffffff !important;
+		color: var(--white) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 700;
@@ -2576,7 +2598,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		.button:hover {
 			background-color: #a5a5a5;
-			color: #ffffff !important;
+			color: var(--white) !important;
 		}
 
 		input[type="submit"]:active,
@@ -2656,8 +2678,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
-			color: #ffffff !important;
+			background-color: var(--highlight);
+			color: var(--white) !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2798,8 +2820,8 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #3b4e95;
-		color: #d2f2e9;
+		background: var(--highlight);
+		color: #b3bad4;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2810,11 +2832,11 @@ input, select, textarea {
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: var(--white);
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #ffffff;
+				color: var(--white);
 			}
 
 		#header header p {
@@ -2826,7 +2848,7 @@ input, select, textarea {
 		}
 
 			#header a:hover {
-				color: #ffffff !important;
+				color: var(--white) !important;
 			}
 
 		#header > header {
@@ -2887,7 +2909,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #3b4e95;
+					border-top: solid 2px var(--highlight);
 					display: block;
 					padding: 0;
 				}
@@ -2906,7 +2928,7 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #f8f0e5;				/* sidebar active section [ML] */
-							color: #3b4e95  !important;
+							color: var(--highlight)  !important;
 							/* color: #4acaa8 !important; */
 						}
 
@@ -2925,7 +2947,7 @@ input, select, textarea {
 
 	#main > section {
 		border-top: solid 6px #bdc4df;
-		background: #f8f0e5; /* background colour [ML] */
+		background: var(--background);
 	}
 
 		#main > section > .container {
@@ -3219,7 +3241,7 @@ input, select, textarea {
 	#footer {
 		background: #fafafa;
 		border-top: 0;
-		color: #646464;
+		color: var(--footerFont);
 		overflow: hidden;
 		padding: 4em 0 2em 0;
 	}
@@ -3414,7 +3436,7 @@ input, select, textarea {
 			}
 
 				#titleBar .title {
-					color: #fff;
+					color: var(--background);
 					display: block;
 					font-weight: 700;
 					height: 44px;
@@ -3454,8 +3476,8 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
-						color: #ffffff;
+						background: var(--highlight);
+						color: var(--white);
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
