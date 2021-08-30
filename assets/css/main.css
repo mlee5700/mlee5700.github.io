@@ -1774,7 +1774,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #aaa;
+		color: var(--font);
 		position: relative;
 		margin: 0 0 1.6875em 0;
 	}
