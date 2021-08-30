@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="contact-form.css" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -25,7 +26,7 @@
 						<li><a href="#about" class="active">About</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#work">Work</a></li>
-						<!-- <li><a href="#contact">Contact</a></li> -->
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -35,7 +36,7 @@
 						<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 						<!-- <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li> -->
 						<li><a href="https://www.linkedin.com/in/mlee5700/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:mlee5700@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<!-- <li><a href="mailto:mlee5700@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
 					</ul>
 				</footer>
 			</section>
@@ -221,28 +222,42 @@
 							</section>
 
 						<!-- contact -->
-							<!-- <section id="contact">
+							<section id="contact">
 								<div class="container" style="text-align: center">
-									<h3>Contact Me</h3>
-									<p>Note that I currently am not actively looking for new opportunities.</p>
-										<a href="mailto:mlee5700@gmail.com" class="icon solid fa-envelope icon-large fa-5x"><span class="label">Email</span></a>
+									<h3>Contact</h3>
+									<!-- <p>Note that I currently am not actively looking for new opportunities.</p>
+									<a href="mailto:mlee5700@gmail.com" class="icon solid fa-envelope icon-large fa-5x"><span class="label">Email</span></a> -->
 
-									<form method="post" action="contact-form-process.php">
+									<form method="post" name="gform" id="gform" enctype="application/x-www-form-urlencoded"
+									action="https://docs.google.com/forms/d/e/1FAIpQLSeb5xJrr_W6FnAsuqh1HtVsheWuO9dh-6m0r1WS4h4tDYUALg/formResponse?"
+									target="hidden_iframe" onsubmit="submitted=true;">
 										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-6 col-12-xsmall"><input type="text" name="entry.1760448849" id="entry.1760448849" placeholder="Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="entry.137069405" id="entry.137069405" placeholder="Email" /></div>
+											<div class="col-12"><input type="text" name="entry.866920861" id="entry.866920861" placeholder="Subject" /></div>
+											<div class="col-12"><textarea name="entry.1866511820" id="entry.1866511820" placeholder="Message" rows="6"></textarea></div>
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
+													<li><input type="submit" class="primary" value="Submit" /></li>
 													<li><input type="reset" value="Reset Form" /></li>
 												</ul>
 											</div>
 										</div>
 									</form>
+									
+									<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+									<script src="assets/js/jquery.min.js"></script>
+									<script type="text/javascript">var submitted=false;</script>
+									<script type="text/javascript">
+										$('#gform').on('submit', function(e) {
+											$('#gform *').fadeOut(2000);
+											$('#gform').prepend('Your submission has been processed...');
+										});
+									</script>
+
 								</div>
-							</section> -->
+							</section>
 
 						<!-- Five
 						

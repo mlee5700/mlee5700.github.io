@@ -15,6 +15,7 @@
 	--white: #ffffff;
 	--highlight: #3b4e95;
 	--highlighter: #6e7799;
+	--highlighter2:rgb(207, 214, 236)9;
 	--title: #1d1d1d;
 	--font: #3d4253;
 	--footerFont: #646464;
@@ -1804,7 +1805,7 @@ input, select, textarea {
 	}
 
 		header.major h2 + p {
-			color: #777;
+			color: var(--highlight);
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -1815,7 +1816,7 @@ input, select, textarea {
 	}
 
 		header.major h3 + p {
-			color: #777;
+			color: var(--highlight);
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -2853,11 +2854,11 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #b7eadc;
+			color: var(--font);
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: var(--font);
 		}
 
 			#header a:hover {
@@ -2884,7 +2885,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: var(--highliter2);
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2933,16 +2934,16 @@ input, select, textarea {
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #f8f0e5 !important;
+						color: var(--background) !important;
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
-							background: #f8f0e5;				/* sidebar active section [ML] */
+							background: var(--background);				/* sidebar active section [ML] */
 							color: var(--highlight)  !important;
-							/* color: #4acaa8 !important; */
+							font-weight: bold;
 						}
 
 					#header > nav ul li:first-child {
