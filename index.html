@@ -25,17 +25,17 @@
 						<li><a href="#about" class="active">About</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#work">Work</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<!-- <li><a href="#contact">Contact</a></li> -->
 					</ul>
 				</nav>
 				<footer>
 					<ul class="icons">
-						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li> -->
-						<!-- <li><a href="https://www.linkedin.com/in/mlee5700/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
-						<!-- <li><a href="mailto:mlee5700@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li> -->
+						<li><a href="https://www.linkedin.com/in/mlee5700/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:mlee5700@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -52,9 +52,9 @@
 									<img src="images/banner.jpg" alt="" />
 								</div>
 								<div class="container">
-									<!-- <header class="major">
-										<h2>About</h2>
-									</header> -->
+									<header class="major">
+										<h3>About</h3>
+									</header>
 									<p>Hi! I'm Matt, a Sydney-based electrical (power) engineer who specialises in network modelling, cost-benefit analyses, and investment decision-making.
 										I am also proficient in Python and VBA and have developed numerous scripts to solve difficult tasks and increase efficiency.</p>
 									<p>I have worked in the electrical utility industry for over nine years and I'm currently the Forecasting & Planning Engineer at Endeavour Energy.</p>
@@ -93,7 +93,9 @@
 						<!-- projects -->
 							<section id="projects">
 								<div class="container">
-									<h3>Projects</h3>
+									<header class="major">
+										<h3>Projects</h3>
+									</header>
 									<!-- <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p> -->
 									<div class="features">
 										<article>
@@ -111,8 +113,7 @@
 												<h4>Upstream protective device</h4>
 												<p>A Python script that iterates over PowerFactory distribution models and identifies the upstream protective devices
 													of distribution assets and the peak load lost if the asset is faulty.</p>
-												<p>Primarily utilised to accurately calculated
-													unserved energy.</p>
+												<p>Primarily utilised to accurately calculated unserved energy.</p>
 											</div>
 										</article>
 										<article>
@@ -120,15 +121,16 @@
 											<!-- <a href="images/fulls/01.jpg" class="image thumb"><img src="images/thumbs/01.jpg" alt="" /></a> -->
 											<div class="inner">
 												<h4>Cost-benefit analysis tool for distribution works</h4>
-												<p>Suite of cost-benefit analysis Excel & VBA tools used to justify a distribution network investments. </p>
-												<p>Project development is ongoing with new functionality been added, debugging and providing support for Capacity Planners.</p>
+												<p>Suite of cost-benefit analysis Excel & VBA models used to justify distribution network investments to
+													alleviate. The suite has e.g. overloaded asset, overloaded feeder and ringing in spurs models.</p>
 											</div>
 										</article>
 										<article>
 											<a href="images/fulls/vegDefect.png" class="image"><img src="images/thumbs/vegDefect.png" alt="" /></a>
 											<div class="inner">
-												<h4>Google Earth KMZ comparison</h4>
-												<p>A Python script to compare two KMZ files together and return a KMZ containing placemarks common between the two KMZs.</p>
+												<h4>Google Earth files comparator</h4>
+												<p>A Python script to compare two Google Earth files (KMZs or KMLs) and output a new KMZ containing the placemarks that
+													are common between the two inputted KMZs.</p>
 												<p>The script was utilised to identify areas of the network where there were repeated and/or uncleared vegetation defects.</p>
 											</div>
 										</article>
@@ -139,7 +141,9 @@
 						<!-- work -->
 							<section id="work">
 								<div class="container">
-									<h3>Work</h3>
+									<header class="major">
+										<h3>Work</h3>
+									</header>
 									<div class="row">
 										<div class="col-4 col-12-xsmall">
 											<h4>Engineer &mdash; Forecasting & Planning</h4>
@@ -148,16 +152,11 @@
 										</div>
 										<div class="col-8 col-12-xsmall">
 											<ul>
-												<li>Evaluated customer applications and provided planning advice to provide the best value for Endeavour Energy and its customers.</li>
-												<li>Carried out analyses of distribution and transmission networks under various operating scenarios to identify network constraints.</li>
-												<li>Identified solutions to overcome identified network constraints, calculated cost-benefit analyses for solutions, determined optimal
-													timing for network investments, and produced Cases for Investment.</li>
-												<li>Developed long term investment strategies for allocated geographical area to minimise risks to as low as financially viable, and
-													maximise value Endeavour Energy and its customers.</li>
-												<li>Contributed to the development of Network Planning documents including demand forecasts, the Transmission Network Planning Review, 
-													and the Distribution Annual Planning Report.</li>
-												<li>Developed a PowerFactory script that runs a load flow, and reports on the specified feeders' currents, load types, overloaded 
-													conductors and voltage issues to increase productivity.</li>
+												<li>Spearheaded the development of the unserved energy methodology implemented into Endeavour Energy's investment portfolio optimisation tool.</li>
+												<!-- <li>Assisted Capacity Planners with complex technical analyses of customer applications to formulate Planning requirements to optimise risks borne by the customer and Endeavour.</li> -->
+												<li>Evaluated the feasibility of deferring network investments with grid batteries.</li>
+												<li>Developed business cases to optimally mitigate identified network constraints including evaluation of non-network solutions.</li>
+												<!-- <li>Continued development and maintenance of cost-benefit analyses tools including unserved energy and the Houston-Kemp RIT-D models.</li> -->
 											</ul>
 										</div>
 									</div>
@@ -222,13 +221,13 @@
 							</section>
 
 						<!-- contact -->
-							<section id="contact">
+							<!-- <section id="contact">
 								<div class="container" style="text-align: center">
 									<h3>Contact Me</h3>
 									<p>Note that I currently am not actively looking for new opportunities.</p>
 										<a href="mailto:mlee5700@gmail.com" class="icon solid fa-envelope icon-large fa-5x"><span class="label">Email</span></a>
 
-									<!-- <form method="post" action="#">
+									<form method="post" action="contact-form-process.php">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -240,10 +239,10 @@
 													<li><input type="reset" value="Reset Form" /></li>
 												</ul>
 											</div>
-										</div> -->
+										</div>
 									</form>
 								</div>
-							</section>
+							</section> -->
 
 						<!-- Five
 						
