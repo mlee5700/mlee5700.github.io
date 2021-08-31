@@ -18,8 +18,9 @@
 	--highlighter2:rgb(207, 214, 236)9;
 	--title: #1d1d1d;
 	--font: #3d4253;
-	--footerFont: #646464;
+	--footerFont: #9c9c9c;
 	--panelIcons: #95b5e2;
+	--activeSide: #eee4d8;
   }
 
 html, body, div, span, applet, object,
@@ -2273,7 +2274,7 @@ input, select, textarea {
 
 		.image.main2 {
 			display: block;
-			height: 10em;
+			height: 10.5em;
 			border-radius: 0;
 		}
 
@@ -2941,7 +2942,7 @@ input, select, textarea {
 					}
 
 						#header > nav ul li a.active {
-							background: var(--background);				/* sidebar active section [ML] */
+							background: var(--activeSide);
 							color: var(--highlight)  !important;
 							font-weight: bold;
 						}
