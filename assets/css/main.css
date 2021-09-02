@@ -16,15 +16,8 @@
 	--highlighterBright: rgb(101, 137, 255);
 	--title: rgb(51, 51, 51);
 	--font: #3d4253;
-	--footerFont: #9c9c9c;
-	--panelIcons: #a7b1ee;
-	--headerStrong: #ffffff;
-	--headerAlt: #e7e7e7;
-	--headerWeak: rgb(255, 197, 122);
-	--strong: #000000;
-	--sectionSep: rgb(207, 212, 235);
-	--buttonBorder: #d6d0c8;
-	--bannerHover: rgb(255, 178, 78);	/* #49bf9d */
+	--footerFont: #646464;
+	--panelIcons: #95b5e2;
   }
 
 
