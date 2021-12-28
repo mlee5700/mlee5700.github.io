@@ -188,7 +188,7 @@
 								<script src="https://www.google.com/recaptcha/api.js"></script>
 								<script>
 									function onSubmit(token) {
-									//   document.getElementById("gform").submit();
+										document.getElementById("gform").submit();
 										$('#gform *').fadeOut(500);
 										$('#gform').prepend('Your message has been submitted!');
 									}
@@ -215,12 +215,12 @@
 
 								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-								<script type="text/javascript">
+								<!-- <script type="text/javascript">
 									$('#gform').on('submit', function(e) {
 										$('#gform *').fadeOut(500);
 										$('#gform').prepend('Your message has been submitted!');
 									});
-								</script>
+								</script> -->
 								
 							</div>
 							<!-- <div class="col-4 col-12-small">
