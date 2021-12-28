@@ -183,7 +183,13 @@
 						<div class="row">
 							<div class="col-12 col-12-small">
 								<script src="assets/js/jquery.min.js"></script>
-								<script type="text/javascript">var submitted=false;</script>	
+								<script type="text/javascript">var submitted=false;</script>
+								<script src="https://www.google.com/recaptcha/api.js"></script>
+								<script>
+									function onSubmit(token) {
+									  document.getElementById("demo-form").submit();
+									}
+								</script>
 
 								<form method="post" name="gform" id="gform" enctype="application/x-www-form-urlencoded"
 								action="https://docs.google.com/forms/d/e/1FAIpQLSeb5xJrr_W6FnAsuqh1HtVsheWuO9dh-6m0r1WS4h4tDYUALg/formResponse?"
@@ -193,7 +199,13 @@
 										<div class="col-6 col-12-xsmall"><input type="email" name="entry.137069405" id="entry.137069405" placeholder="Email" /></div>
 										<div class="col-12"><textarea name="entry.1866511820" id="entry.1866511820" placeholder="Message" rows="4"></textarea></div>
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
+											<li>
+												<!-- <input type="submit" value="Send Message" /> -->
+												<button class="g-recaptcha" 
+												data-sitekey="6LcdOdMdAAAAAP2DOg-I4iBPrWxu10nkXHg7DOym"
+												data-callback='onSubmit' 
+												data-action='submit'>Send Message</button>
+											</li>
 										</ul>
 									</div>
 								</form>
