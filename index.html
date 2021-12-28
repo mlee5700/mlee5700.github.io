@@ -188,7 +188,11 @@
 								<script src="https://www.google.com/recaptcha/api.js"></script>
 								<script>
 									function onSubmit(token) {
-									  document.getElementById("gform").submit();
+									//   document.getElementById("gform").submit();
+										$('#gform').on('submit', function(e) {
+											$('#gform *').fadeOut(500);
+											$('#gform').prepend('Your message has been submitted!');
+										});
 									}
 								</script>
 
