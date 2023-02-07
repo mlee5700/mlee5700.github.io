@@ -182,41 +182,65 @@
 						<!-- <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p> -->
 						<div class="row">
 							<div class="col-12 col-12-small">
-								<script src="assets/js/jquery.min.js"></script>
-								<script type="text/javascript">var submitted=false;</script>
+								<form action="https://formspree.io/f/xrgvpbkp" method="POST">
+									<label>
+										Email: <input type="email" name="email">
+									</label>
+									<label>
+										Message: <textarea name="message"></textarea>
+									</label>
+									<!-- your other form fields go here -->
+									<button type="submit">Send</button>
+								</form>
+							</div>
+						</div>
+								
+								<!-- <div id="contact">
+									<div id="contact-form">
+											<form action="https://formspree.io/f/xrgvpbkp" method="POST">
+											<input type="hidden" name="_subject" value="Contact request from personal website" />
+											<input type="email" name="_replyto" placeholder="Your email" required>
+											<textarea name="message" placeholder="Type your message" required></textarea>
+											<button type="submit">Send</button>
+										</form>
+									</div>
+								</div> -->
+							
+								<!-- <script src="assets/js/jquery.min.js"></script>
+								<script type="text/javascript">var submitted=false;</script> -->
 								<!-- <script src="https://www.google.com/recaptcha/api.js?render=6LcdOdMdAAAAAP2DOg-I4iBPrWxu10nkXHg7DOym"></script> -->
-								<script src="https://www.google.com/recaptcha/api.js"></script>
+								<!-- <script src="https://www.google.com/recaptcha/api.js"></script>
 								<script>
 									function onSubmit(token) {
 									  	document.getElementById("gform").submit();
 										$('#gform *').fadeOut(500);
 										$('#gform').prepend('Your message has been submitted!');
 									}
-								</script>
-
-								<form method="post" name="gform" id="gform" enctype="application/x-www-form-urlencoded"
+								</script> -->
+								
+								<!-- <form method="post" name="gform" id="gform" enctype="application/x-www-form-urlencoded"
 								action="https://docs.google.com/forms/d/e/1FAIpQLSeb5xJrr_W6FnAsuqh1HtVsheWuO9dh-6m0r1WS4h4tDYUALg/formResponse?"
 								target="hidden_iframe" onsubmit="submitted=true;">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="entry.1760448849" id="entry.1760448849" placeholder="" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="entry.137069405" id="entry.137069405" placeholder="" /></div>
-										<div class="col-12"><textarea name="entry.1866511820" id="entry.1866511820" placeholder="" rows="4"></textarea></div>
+										<div class="col-12"><textarea name="entry.1866511820" id="entry.1866511820" placeholder="" rows="4"></textarea></div> -->
 										<!-- <div class="col-6 col-12-xsmall"><input type="text" name="entry.1760448849" id="entry.1760448849" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="entry.137069405" id="entry.137069405" placeholder="Email" /></div>
 										<div class="col-12"><textarea name="entry.1866511820" id="entry.1866511820" placeholder="Message" rows="4"></textarea></div> -->
-										<ul class="actions">
-											<li>
+										<!-- <ul class="actions">
+											<li> -->
 												<!-- <input type="submit" value="Send Message" /> -->
-												<button class="g-recaptcha" 
+												<!-- <button class="g-recaptcha" 
 												data-sitekey="6LcdOdMdAAAAAP2DOg-I4iBPrWxu10nkXHg7DOym"
 												data-callback='onSubmit' 
 												data-action='submit'>Send Message</button>
 											</li>
 										</ul>
 									</div>
-								</form>
+								</form> -->
 
-								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+								<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
 
 								<!-- <script type="text/javascript">
 									$('#gform').on('submit', function(e) {
@@ -225,7 +249,6 @@
 									});
 								</script> -->
 								
-							</div>
 							<!-- <div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
